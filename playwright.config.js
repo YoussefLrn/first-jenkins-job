@@ -9,7 +9,7 @@ export default defineConfig({
   /* Retry on CI only */
   retries: 1,
   /* Opt out of parallel tests on CI. */
-  workers: 4,
+  workers: 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
   
@@ -19,7 +19,7 @@ export default defineConfig({
     // baseURL: 'http://localhost:3000',
     trace: 'retain-on-failure',
     //video: 'on-first-retry',
-    video: {'mode': 'retain-on-failure', size: { width: 1920, height: 1080} },
+    video: {'mode': 'retain-on-failure', size: { width: 1440, height: 900} },
     headless: false,
   },
 
